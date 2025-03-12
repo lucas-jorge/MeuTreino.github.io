@@ -3,25 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu treino Fitness Tracker - Seu Parceiro de Exercícios</title>
+    <title>API Fitness Tracker - Seu Parceiro de Exercícios</title>
     <style>
+        /* General Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
             color: #333;
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
+            background-color: #fff; /* Added background color */
         }
         h1, h2 {
             color: #2c3e50;
         }
+
+        /* HomeMain Styles (Based on Home.module.css) */
+        .homeMain {
+            padding-top: 40px;
+            margin: 30px;
+        }
+
+        .homeMain p, .homeMain h2 {
+            margin: 0;
+        }
+
+        .homeMain h1 {
+            font-size: 20px;
+            padding-bottom: 4px;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            text-align: start;
+            padding-bottom: 20px;
+        }
+
+        /* UserList Styles */
+        .userList {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+        }
+
+        .userList_item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #E7E7E7;
+            border: 1px solid #CAEF47;
+            border-radius: 8px;
+            width: 100%;
+            padding: 9px;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .userList_item p {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        /* UserListAdd Styles */
+        .userListAdd {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            padding-top: 70px;
+        }
+
+        .userListAdd h2 {
+            font-size: 20px;
+            margin: 0;
+        }
+
+        .userListAdd_item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #F6F4F4;
+            border: 1px solid #CAEF47;
+            border-radius: 8px;
+            width: 100%;
+            padding: 9px;
+        }
+
+        .userListAdd_item p {
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        /* Feature Styles - Retained with slight modification */
         .feature {
             background-color: #f4f4f4;
             border-left: 5px solid #3498db;
             padding: 10px;
             margin-bottom: 10px;
         }
+
+        /* CTA Button Styles - Retained */
         .cta-button {
             display: inline-block;
             background-color: #3498db;
@@ -34,18 +117,18 @@
     </style>
 </head>
 <body>
-    <header>
+    <header class="homeMain">
         <h1>API Fitness Tracker</h1>
-        <p>Sua solução completa para gerenciamento de exercícios e usuários</p>
+        <p class="subtitle">Sua solução completa para gerenciamento de exercícios e usuários</p>
     </header>
 
-    <main>
+    <main class="homeMain">
         <section>
             <h2>Sobre o Projeto</h2>
             <p>O API Fitness Tracker é uma poderosa API backend construída com ASP.NET Core, projetada para facilitar o gerenciamento de usuários e exercícios em aplicativos de fitness.</p>
         </section>
 
-        <section>
+        <section class="userListAdd">
             <h2>Principais Funcionalidades</h2>
             <div class="feature">
                 <h3>Gerenciamento de Usuários</h3>
@@ -65,7 +148,7 @@
             </div>
         </section>
 
-        <section>
+        <section class="userListAdd">
             <h2>Tecnologias Utilizadas</h2>
             <ul>
                 <li>ASP.NET Core 3.1</li>
@@ -76,14 +159,14 @@
             </ul>
         </section>
 
-        <section>
+        <section class="userListAdd">
             <h2>Comece Agora</h2>
             <p>Explore nossa documentação completa e comece a integrar o API Fitness Tracker em seu projeto hoje mesmo!</p>
             <a href="#" class="cta-button">Ver Documentação</a>
         </section>
     </main>
 
-    <footer>
+    <footer class="homeMain">
         <p>&copy; 2025 API Fitness Tracker. Todos os direitos reservados.</p>
     </footer>
 </body>
