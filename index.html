@@ -5,49 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Treino Fitness Tracker - Seu Parceiro de Exercícios</title>
     <style>
-        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             line-height: 1.6;
             color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff; /* Added background color */
         }
-        h1, h2 {
-            color: #2c3e50;
-        }
-
-        /* HomeMain Styles (Based on Home.module.css) */
+        
         .homeMain {
             padding-top: 40px;
             margin: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
         }
-
+        
         .homeMain p, .homeMain h2 {
             margin: 0;
         }
-
+        
         .homeMain h1 {
             font-size: 20px;
             padding-bottom: 4px;
+            color: #2c3e50;
         }
-
+        
         .subtitle {
             font-size: 16px;
             text-align: start;
             padding-bottom: 20px;
         }
-
-        /* UserList Styles */
+        
         .userList {
             display: flex;
             flex-direction: column;
             gap: 10px;
             width: 100%;
         }
-
+        
         .userList_item {
             display: flex;
             justify-content: space-between;
@@ -60,13 +60,12 @@
             text-decoration: none;
             color: inherit;
         }
-
+        
         .userList_item p {
             font-size: 16px;
             font-weight: 600;
         }
-
-        /* UserListAdd Styles */
+        
         .userListAdd {
             display: flex;
             flex-direction: column;
@@ -74,12 +73,12 @@
             width: 100%;
             padding-top: 70px;
         }
-
+        
         .userListAdd h2 {
             font-size: 20px;
             margin: 0;
         }
-
+        
         .userListAdd_item {
             display: flex;
             justify-content: space-between;
@@ -90,29 +89,35 @@
             width: 100%;
             padding: 9px;
         }
-
+        
         .userListAdd_item p {
             font-size: 16px;
             font-weight: 400;
         }
-
-        /* Feature Styles - Retained with slight modification */
+        
         .feature {
             background-color: #f4f4f4;
-            border-left: 5px solid #3498db;
+            border-left: 5px solid #CAEF47;
             padding: 10px;
             margin-bottom: 10px;
         }
-
-        /* CTA Button Styles - Retained */
+        
         .cta-button {
             display: inline-block;
-            background-color: #3498db;
-            color: white;
+            background-color: #CAEF47;
+            color: #333;
             padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
+            margin-top: 20px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            font-size: 14px;
         }
     </style>
 </head>
@@ -146,28 +151,57 @@
                 <h3>Flexibilidade de Banco de Dados</h3>
                 <p>Suporte para MySQL e banco de dados em memória.</p>
             </div>
+            <div class="feature">
+                <h3>Categorização de Exercícios</h3>
+                <p>Organize exercícios por categorias como Musculação, Cardio e Flexibilidade.</p>
+            </div>
         </section>
 
         <section class="userListAdd">
             <h2>Tecnologias Utilizadas</h2>
-            <ul>
-                <li>ASP.NET Core 3.1</li>
-                <li>Entity Framework Core</li>
-                <li>MySQL</li>
-                <li>JWT (JSON Web Tokens)</li>
-                <li>C#</li>
-            </ul>
+            <div class="userList">
+                <div class="userList_item">
+                    <p>ASP.NET Core 3.1</p>
+                </div>
+                <div class="userList_item">
+                    <p>Entity Framework Core</p>
+                </div>
+                <div class="userList_item">
+                    <p>MySQL</p>
+                </div>
+                <div class="userList_item">
+                    <p>JWT (JSON Web Tokens)</p>
+                </div>
+                <div class="userList_item">
+                    <p>C#</p>
+                </div>
+                <div class="userList_item">
+                    <p>React + Vite</p>
+                </div>
+            </div>
         </section>
 
         <section class="userListAdd">
-            <h2>Comece Agora</h2>
-            <p>Explore nossa documentação completa e comece a integrar o API Fitness Tracker em seu projeto hoje mesmo!</p>
-            <a href="#" class="cta-button">Ver Documentação</a>
+            <h2>Modelo de Banco de Dados</h2>
+            <p>Nosso modelo físico de banco de dados inclui entidades para Usuários, Exercícios e Categorias, com relacionamentos bem definidos e índices otimizados.</p>
+            <div class="userList">
+                <div class="userList_item">
+                    <p>TB_USUARIO</p>
+                </div>
+                <div class="userList_item">
+                    <p>TB_Exercicios</p>
+                </div>
+                <div class="userList_item">
+                    <p>TB_CATEGORIA</p>
+                </div>
+            </div>
+            <a href="https://github.com/seu-usuario/api-fitness-tracker" class="cta-button">Ver Documentação Completa</a>
         </section>
     </main>
 
-    <footer class="homeMain">
+    <footer>
         <p>&copy; 2025 API Fitness Tracker. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
+
